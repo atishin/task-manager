@@ -1,0 +1,44 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+$bg-color: #888;
+
+header {
+    padding: 20px;
+    background: $bg-color;
+    color: #fff;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background: #fff;
+    box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, .4);
+    padding: 20px;
+
+    
+
+    .form {
+        margin-top: 10px;
+        border-top: 1px solid #000;
+        padding: 10px 0;
+    }
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    flex: 1 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer {
+    background: $bg-color;
+    color: #fff;
+    padding: 20px;
+}

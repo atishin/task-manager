@@ -1,0 +1,6 @@
+<div class="task" *ngFor="let task of tasks" [class.checked]="task.checked">
+  <label>
+    <input type="checkbox" [(ngModel)]="task.checked">
+    {{task.Title}}
+  </label>
+</div>

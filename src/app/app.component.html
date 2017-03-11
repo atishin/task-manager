@@ -1,4 +1,14 @@
-<h1>
-  {{title}}
-</h1>
-<router-outlet></router-outlet>
+<header>
+  <h1>Task Manager</h1>
+</header>
+<main>
+  <div class="tasks">
+    <tm-task-list></tm-task-list>
+    <tm-task-form (onTaskCreated)="taskCreated($event)"></tm-task-form>
+  </div>
+  
+  <router-outlet></router-outlet>
+</main>
+<footer>
+  &copy; 2017
+</footer>

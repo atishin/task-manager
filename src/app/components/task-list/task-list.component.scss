@@ -1,0 +1,12 @@
+.task {
+    &.checked {
+        label {
+            color: #ccc;
+            text-decoration: line-through;
+        }
+    }
+}
+
+:host {
+    
+}

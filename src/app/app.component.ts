@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
+import { ITask } from 'models/ITask';
 
 @Component({
   selector: 'tm-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tm works!';
+
+  public addedTask: ITask = null;
+
+  constructor() {}
+
+  public taskCreated(task) {
+    console.log(task);
+    this.addedTask = task;
+  }
+
 }
